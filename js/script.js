@@ -23,7 +23,7 @@ const TeamMembers =
     {
         immagine : 'img/walter-gordon-office-manager.jpg',
         nome : 'Walter Gordon',
-        occupazione : '	Office Manager  '
+        occupazione : 'Office Manager'
     },
 
     {
@@ -41,7 +41,7 @@ const TeamMembers =
     {
         immagine : 'img/barbara-ramos-graphic-designer.jpg',
         nome : 'Barbara Ramos',
-        occupazione : '	Graphic Designer'
+        occupazione : 'Graphic Designer'
     }
 
 ];
@@ -69,3 +69,5 @@ for(let key in TeamMembers){
 
 //stampo gli elementi
 mainElement.innerHTML = content;
+
+console.log(content)
