@@ -15,35 +15,57 @@ const TeamMembers =
     },
 
     {
-        immagine : 'angela-caroll-chief-editor.jpg',
+        immagine : 'img/angela-caroll-chief-editor.jpg',
         nome : 'Angela Caroll',
         occupazione : 'Chief Editor'
     },
 
     {
-        immagine : 'walter-gordon-office-manager.jpg',
+        immagine : 'img/walter-gordon-office-manager.jpg',
         nome : 'Walter Gordon',
         occupazione : '	Office Manager  '
     },
 
     {
-        immagine : 'angela-lopez-social-media-manager.jpg',
+        immagine : 'img/angela-lopez-social-media-manager.jpg',
         nome : 'Angela Lopez ',
         occupazione : 'Social Media Manager'
     },
 
     {
-        immagine : 'scott-estrada-developer.jpg',
+        immagine : 'img/scott-estrada-developer.jpg',
         nome : 'Scott Estrada',
         occupazione : 'Developer'
     },
 
     {
-        immagine : 'barbara-ramos-graphic-designer.jpg',
+        immagine : 'img/barbara-ramos-graphic-designer.jpg',
         nome : 'Barbara Ramos',
         occupazione : '	Graphic Designer'
     }
 
 ];
 
+// controllo l'array
 console.table(TeamMembers);
+
+//creo una variabile d'appoggio
+let content;
+
+//creo un ciclo dove vado a montare ogni elemento dell'oggetto nella variabile 
+for(let key in TeamMembers){
+    //faccio un controllo
+    console.table(TeamMembers[key]);
+
+    //monto gli elementi
+    content += `
+    <div>
+        <img src="${TeamMembers[key].immagine}" alt"${TeamMembers[key].nome}">
+        <h1>${TeamMembers[key].nome}</h1>
+        <h3>${TeamMembers[key].occupazione}</h3>
+    </div>
+    `;
+}
+
+//stampo gli elementi
+mainElement.innerHTML = content;
