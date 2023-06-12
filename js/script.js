@@ -50,7 +50,7 @@ const TeamMembers =
 console.table(TeamMembers);
 
 //creo una variabile d'appoggio
-let content;
+let content = '';
 
 //creo un ciclo dove vado a montare ogni elemento dell'oggetto nella variabile 
 for(let key in TeamMembers){
