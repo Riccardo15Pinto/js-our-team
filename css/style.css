@@ -7,3 +7,25 @@
 }
 
 /* Genereics */
+
+#main-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#main-content > div{
+    flex-basis: calc(100% / 3 - 20px);
+    text-align: center;
+    padding: 10px;
+    background-color: aliceblue;
+    margin: 10px;
+}
+
+img{
+    display: block;
+    width: 70%;
+    height: 230px;
+    object-fit: cover;
+    margin: 0 auto;
+}
